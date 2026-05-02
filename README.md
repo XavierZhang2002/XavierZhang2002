@@ -3,3 +3,7 @@
 I'm a 2nd-year Master's student at [Peking University](https://www.pku.edu.cn), advised by [Prof. Xiaojun Wan](https://wanxiaojun.github.io/). My research centers on **LLM reliability and interpretability**, with publications on hallucination detection ([ACL 2025](https://aclanthology.org/2025.acl-long.880/)), causal mechanisms of hallucinations ([CIKM 2025](https://arxiv.org/abs/2508.07753)), and copyright protection via internal semantic space control ([AAAI 2026](https://arxiv.org/abs/2511.07001)).
 
 Currently, I focus on building **Long-Context Agents** and **Agentic RL** systems, developing active information foraging and post-training methods for million-token text understanding at **Tencent WXG** (WeChat).
+
+### Featured Work
+
+- **[SCOUT: Active Information Foraging for Long-Text Understanding with Decoupled Epistemic States](https://xavierzhang2002.github.io/SCOUT-page/)** ([ICML 2026](https://icml.cc/Conferences/2026))
