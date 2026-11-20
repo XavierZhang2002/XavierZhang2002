@@ -18,11 +18,15 @@ Post-training for Agents · Long-Context Understanding · Finance · Co-Work Wor
 
 </div>
 
+---
+
 ## About
 
 I work on **post-training for agents in real-world scenarios** — long-context understanding, finance, and co-work workflows. I care about turning a paper idea into something that survives real data and real evaluations, which is why most of my work pairs a research question with a working training and evaluation pipeline.
 
 I am a master's student at Peking University, working with [Prof. Xiaojun Wan](https://wanxiaojun.github.io/), and currently a research intern on the Ling Team at Ant Group.
+
+---
 
 ## Selected Publications
 
@@ -32,12 +36,16 @@ I am a master's student at Peking University, working with [Prof. Xiaojun Wan](h
 - **Bias & Hallucination** — Exploring Causal Effect of Social Bias on Faithfulness Hallucinations in LLMs. CIKM 2025 (Oral). [Paper](https://arxiv.org/abs/2508.07753) [Data](https://github.com/XavierZhang2002/BID)
 - **JointCQ** — Improving Factual Hallucination Detection with Joint Claim and Query Generation. ACL 2026 (Findings). [Paper](https://arxiv.org/abs/2510.19310) [Code](https://github.com/pku0xff/JointCQ) *(maintained by the first author)*
 
+---
+
 ## Open Source
 
 - [scout-open](https://github.com/XavierZhang2002/scout-open) — reference implementation of SCOUT, an active information foraging framework for long-text understanding.
 - [ICR_Probe](https://github.com/XavierZhang2002/ICR_Probe) — probe that tracks hidden-state dynamics to detect hallucinations.
 - [BID](https://github.com/XavierZhang2002/BID) — dataset and code for the causal study of social bias in hallucination.
 - [agentic-rl-analysis](https://github.com/XavierZhang2002/agentic-rl-analysis) — survey of LLM post-training algorithms and industrial practice.
+
+---
 
 ## Experience
 
