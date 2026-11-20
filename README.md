@@ -31,7 +31,7 @@ I am a master's student at Peking University and received my bachelor's degree f
 - **SCOPE** — Intrinsic Semantic Space Control for Mitigating Copyright Infringement in LLMs. AAAI 2026. [[Paper]](https://arxiv.org/abs/2511.07001)
 - **ICR Probe** — Tracking Hidden State Dynamics for Reliable Hallucination Detection in LLMs. ACL 2025. [[Paper]](https://arxiv.org/abs/2507.16488) [[Code]](https://github.com/XavierZhang2002/ICR_Probe)
 - **Bias & Hallucination** — Exploring Causal Effect of Social Bias on Faithfulness Hallucinations in LLMs. CIKM 2025 (Oral). [[Paper]](https://arxiv.org/abs/2508.07753) [[Data]](https://github.com/XavierZhang2002/BID)
-- **JointCQ** — Improving Factual Hallucination Detection with Joint Claim and Query Generation. ACL 2026 (Findings). [[Paper]](https://arxiv.org/abs/2510.19310) [[Code]](https://github.com/pku0xff/JointCQ) *(maintained by the first author)*
+- **JointCQ** — Improving Factual Hallucination Detection with Joint Claim and Query Generation. ACL 2026 (Findings). [[Paper]](https://arxiv.org/abs/2510.19310) [[Code]](https://github.com/pku0xff/JointCQ)
 
 ## Open Source
 
