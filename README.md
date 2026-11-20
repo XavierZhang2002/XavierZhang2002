@@ -2,7 +2,7 @@
 
 # Zhenliang Zhang | 张珍梁
 
-**M.Sc. Student @ Peking University · Research Intern @ Ant Group**
+**M.Sc. Student @ Peking University**
 
 Post-training for Agents · CoWork · Long-Context · Finance
 
