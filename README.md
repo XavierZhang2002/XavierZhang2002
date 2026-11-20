@@ -21,7 +21,7 @@ Agentic Post-training (CoWork, Long-Context, Finance) · LLM interpretability
 
 ## About
 
-I work on **post-training for agents in real-world scenarios** — long-context understanding, finance, and co-work workflows. My earlier work, in collaboration with [Prof. Xiaojun Wan](https://wanxiaojun.github.io/), studied **LLM reliability and interpretability**: what makes a model hallucinate, how to detect it, and how to steer behaviour in representation space.
+I work on **agentic post-training for real-world scenarios**: CoWork, long-context, and finance. My earlier work studied **LLM reliability and interpretability**, asking what makes a model hallucinate, how to detect it, and how to steer behaviour in representation space. I explored these topics with [Prof. Xiaojun Wan](https://wanxiaojun.github.io/).
 
 I am a master's student at Peking University and received my bachelor's degree from Beihang University.
 
