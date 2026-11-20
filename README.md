@@ -19,15 +19,11 @@ Post-training for Agents · CoWork · Long-Context · Finance
 
 </div>
 
----
-
 ## About
 
 I work on **post-training for agents in real-world scenarios** — long-context understanding, finance, and co-work workflows. My earlier work studied **LLM reliability and interpretability**: what makes a model hallucinate, how to detect it, and how to steer behaviour in representation space.
 
 I am a master's student at Peking University, working with [Prof. Xiaojun Wan](https://wanxiaojun.github.io/), and currently a research intern on the Ling Team at Ant Group.
-
----
 
 ## Selected Publications
 
@@ -37,8 +33,6 @@ I am a master's student at Peking University, working with [Prof. Xiaojun Wan](h
 - **Bias & Hallucination** — Exploring Causal Effect of Social Bias on Faithfulness Hallucinations in LLMs. CIKM 2025 (Oral). [Paper](https://arxiv.org/abs/2508.07753) [Data](https://github.com/XavierZhang2002/BID)
 - **JointCQ** — Improving Factual Hallucination Detection with Joint Claim and Query Generation. ACL 2026 (Findings). [Paper](https://arxiv.org/abs/2510.19310) [Code](https://github.com/pku0xff/JointCQ) *(maintained by the first author)*
 
----
-
 ## Open Source
 
 - **SCOUT** — reference implementation of active information foraging for long-text understanding. [Code](https://github.com/XavierZhang2002/scout-open)
@@ -46,11 +40,8 @@ I am a master's student at Peking University, working with [Prof. Xiaojun Wan](h
 - **BID** — dataset and code for the causal study of social bias in hallucination. [Data](https://github.com/XavierZhang2002/BID)
 - **Agentic RL Analysis** — survey of LLM post-training algorithms and industrial practice. [Code](https://github.com/XavierZhang2002/agentic-rl-analysis)
 
----
-
 ## Experience
 
 - **Ant Group, Ling Team** (2026.05 – ) — research intern, post-training for finance agent and co-work instruction following.
 - **Tencent, WeChat** (2025.09 – 2026.05) — research intern on million-token long-text understanding; proposed SCOUT.
 
-<div align="center"><sub>Badges refresh twice a day from Google Scholar and the GitHub API.</sub></div>
