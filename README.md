@@ -4,7 +4,7 @@
 
 **M.Sc. Student @ Peking University**
 
-Post-training for Agents · CoWork · Long-Context · Finance
+Agentic Post-training (CoWork, Long-Context, Finance) · LLM interpretability
 
 [Google Scholar](https://scholar.google.com/citations?user=5G8W6OcAAAAJ) ·
 [Semantic Scholar](https://www.semanticscholar.org/author/Zhenliang-Zhang/2372124652) ·
@@ -21,9 +21,9 @@ Post-training for Agents · CoWork · Long-Context · Finance
 
 ## About
 
-I work on **post-training for agents in real-world scenarios** — long-context understanding, finance, and co-work workflows. My earlier work studied **LLM reliability and interpretability**: what makes a model hallucinate, how to detect it, and how to steer behaviour in representation space.
+I work on **post-training for agents in real-world scenarios** — long-context understanding, finance, and co-work workflows. My earlier work, in collaboration with [Prof. Xiaojun Wan](https://wanxiaojun.github.io/), studied **LLM reliability and interpretability**: what makes a model hallucinate, how to detect it, and how to steer behaviour in representation space.
 
-I am a master's student at Peking University, working with [Prof. Xiaojun Wan](https://wanxiaojun.github.io/), and currently a research intern on the Ling Team at Ant Group.
+I am a master's student at Peking University and received my bachelor's degree from Beihang University.
 
 ## Selected Publications
 
