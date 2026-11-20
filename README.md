@@ -4,9 +4,10 @@
 
 **M.Sc. Student @ Peking University · Research Intern @ Ant Group**
 
-Post-training for Agents · Long-Context Understanding · Finance · Co-Work Workflows
+Post-training for Agents · CoWork · Long-Context · Finance
 
 [Google Scholar](https://scholar.google.com/citations?user=5G8W6OcAAAAJ) ·
+[Semantic Scholar](https://www.semanticscholar.org/author/Zhenliang-Zhang/2372124652) ·
 [GitHub](https://github.com/XavierZhang2002) ·
 [Email](mailto:zhenliang@stu.pku.edu.cn)
 
@@ -22,7 +23,7 @@ Post-training for Agents · Long-Context Understanding · Finance · Co-Work Wor
 
 ## About
 
-I work on **post-training for agents in real-world scenarios** — long-context understanding, finance, and co-work workflows. I care about turning a paper idea into something that survives real data and real evaluations, which is why most of my work pairs a research question with a working training and evaluation pipeline.
+I work on **post-training for agents in real-world scenarios** — long-context understanding, finance, and co-work workflows. My earlier work studied **LLM reliability and interpretability**: what makes a model hallucinate, how to detect it, and how to steer behaviour in representation space.
 
 I am a master's student at Peking University, working with [Prof. Xiaojun Wan](https://wanxiaojun.github.io/), and currently a research intern on the Ling Team at Ant Group.
 
@@ -40,10 +41,10 @@ I am a master's student at Peking University, working with [Prof. Xiaojun Wan](h
 
 ## Open Source
 
-- [scout-open](https://github.com/XavierZhang2002/scout-open) — reference implementation of SCOUT, an active information foraging framework for long-text understanding.
-- [ICR_Probe](https://github.com/XavierZhang2002/ICR_Probe) — probe that tracks hidden-state dynamics to detect hallucinations.
-- [BID](https://github.com/XavierZhang2002/BID) — dataset and code for the causal study of social bias in hallucination.
-- [agentic-rl-analysis](https://github.com/XavierZhang2002/agentic-rl-analysis) — survey of LLM post-training algorithms and industrial practice.
+- **SCOUT** — reference implementation of active information foraging for long-text understanding. [Code](https://github.com/XavierZhang2002/scout-open)
+- **ICR Probe** — probe that tracks hidden-state dynamics to detect hallucinations. [Code](https://github.com/XavierZhang2002/ICR_Probe)
+- **BID** — dataset and code for the causal study of social bias in hallucination. [Data](https://github.com/XavierZhang2002/BID)
+- **Agentic RL Analysis** — survey of LLM post-training algorithms and industrial practice. [Code](https://github.com/XavierZhang2002/agentic-rl-analysis)
 
 ---
 
