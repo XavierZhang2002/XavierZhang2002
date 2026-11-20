@@ -1,16 +1,17 @@
 # Profile metrics
 
-The citation badge in the profile README is refreshed by
-[`.github/workflows/scholar-metrics.yml`](../.github/workflows/scholar-metrics.yml).
+The two badges at the top of the profile README are generated here.
 
-- `.github/scripts/fetch_scholar.py` queries the Google Scholar author profile through the
-  SerpApi `google_scholar_author` engine and writes `results/gs_data.json` plus a
-  shields.io-compatible `results/gs_data_shieldsio.json`.
-- The workflow force-pushes those two files to the orphan branch
-  `google-scholar-stats`, so the README badge can read a stable raw URL.
-- If the request fails or returns no citation table, the script exits non-zero and the
-  previous snapshot stays published — the badge never drops to zero.
-- Scholar ID and the repository list live in [`config.json`](config.json).
+- [`.github/scripts/update_metrics.py`](../.github/scripts/update_metrics.py) collects the
+  Google Scholar citation count through the SerpApi `google_scholar_author` engine and the
+  star total of the repositories listed in [`config.json`](config.json).
+- It writes [`stats.json`](stats.json) plus light and dark SVG badges
+  (`citations.svg`, `citations-dark.svg`, `project-stars.svg`, `project-stars-dark.svg`).
+- [`profile-metrics.yml`](../.github/workflows/profile-metrics.yml) runs twice a day and
+  commits whatever changed. The README picks the right variant with
+  `<picture>` and `prefers-color-scheme`.
+- A failed request keeps the previous snapshot, so a badge never drops to zero; the job only
+  fails when there has never been a valid snapshot.
 
 Required secret: `SERPAPI_KEY` (Settings → Secrets and variables → Actions).
 `SCHOLAR_ID` is optional and overrides `config.json` when set.

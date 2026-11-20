@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-20T02:35:40Z",
+  "sources": {},
+  "citations": {
+    "citations": 65,
+    "hIndex": 2,
+    "i10Index": 1,
+    "url": "https://scholar.google.com/citations?user=5G8W6OcAAAAJ"
+  },
+  "repositories": [
+    {
+      "repo": "XavierZhang2002/scout-open",
+      "url": "https://github.com/XavierZhang2002/scout-open",
+      "stars": 23
+    },
+    {
+      "repo": "XavierZhang2002/ICR_Probe",
+      "url": "https://github.com/XavierZhang2002/ICR_Probe",
+      "stars": 25
+    },
+    {
+      "repo": "XavierZhang2002/BID",
+      "url": "https://github.com/XavierZhang2002/BID",
+      "stars": 2
+    },
+    {
+      "repo": "XavierZhang2002/agentic-rl-analysis",
+      "url": "https://github.com/XavierZhang2002/agentic-rl-analysis",
+      "stars": 9
+    }
+  ],
+  "stars": 59
+}

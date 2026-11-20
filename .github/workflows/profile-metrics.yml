@@ -1,0 +1,49 @@
+name: Update profile metrics
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3,15 * * *'   # 11:00 and 23:00 China time
+  push:
+    branches: [main]
+    paths:
+      - 'metrics/config.json'
+      - '.github/scripts/update_metrics.py'
+      - '.github/workflows/profile-metrics.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-metrics
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Collect and render metrics
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python .github/scripts/update_metrics.py
+
+      - name: Commit updated metrics
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add metrics/
+          if git diff --cached --quiet; then
+            echo 'metrics unchanged'
+            exit 0
+          fi
+          git commit -q -m 'Update profile metrics'
+          git push origin HEAD:main
