@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-25T12:20:11Z",
+  "updatedAt": "2026-11-25T12:30:50Z",
   "sources": {},
   "citations": {
-    "citations": 63,
+    "citations": 66,
     "hIndex": 2,
-    "paperCount": 6,
-    "source": "semantic-scholar",
-    "url": "https://www.semanticscholar.org/author/Zhenliang-Zhang/2372124652"
+    "i10Index": 1,
+    "source": "serpapi",
+    "url": "https://scholar.google.com/citations?user=5G8W6OcAAAAJ"
   },
   "repositories": [
     {
