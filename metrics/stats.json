@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-25T12:30:50Z",
+  "updatedAt": "2026-11-25T23:28:45Z",
   "sources": {},
   "citations": {
     "citations": 66,
@@ -23,7 +23,7 @@
     {
       "repo": "XavierZhang2002/BID",
       "url": "https://github.com/XavierZhang2002/BID",
-      "stars": 2
+      "stars": 1
     },
     {
       "repo": "XavierZhang2002/agentic-rl-analysis",
@@ -31,5 +31,5 @@
       "stars": 9
     }
   ],
-  "stars": 60
+  "stars": 59
 }
