@@ -63,6 +63,25 @@ def scholar_citations(scholar_id, api_key):
     return {"citations": citations, "hIndex": total("h_index"), "i10Index": total("i10_index")}
 
 
+S2_API = (
+    "https://api.semanticscholar.org/graph/v1/author/{aid}"
+    "?fields=name,citationCount,hIndex,paperCount"
+)
+
+
+def semantic_scholar(author_id):
+    data = fetch_json(S2_API.format(aid=author_id))
+    citations = data.get("citationCount")
+    if not isinstance(citations, int):
+        raise ValueError("no citationCount in the Semantic Scholar response")
+    return {
+        "citations": citations,
+        "hIndex": data.get("hIndex"),
+        "paperCount": data.get("paperCount"),
+        "source": "semantic-scholar",
+    }
+
+
 def repo_stars(repo, token):
     headers = {"Accept": "application/vnd.github+json", "User-Agent": "profile-metrics/1.0"}
     if token:
@@ -112,19 +131,31 @@ def main():
     scholar_id = os.environ.get("SCHOLAR_ID") or config["scholarId"]
     api_key = os.environ.get("SERPAPI_KEY")
     scholar = None
+
     if api_key:
         try:
             scholar = scholar_citations(scholar_id, api_key)
+            scholar["source"] = "serpapi"
+            scholar["url"] = SCHOLAR_PROFILE.format(sid=scholar_id)
         except Exception as error:  # noqa: BLE001
-            print("::warning::Scholar fetch failed: %s" % error)
+            print("::warning::SerpApi fetch failed: %s" % error)
     else:
-        print("::warning::SERPAPI_KEY is not set")
+        print("::notice::SERPAPI_KEY is not set, falling back to Semantic Scholar")
+
     if scholar is None:
-        scholar = (previous.get("citations") or {})
+        s2_id = config.get("semanticScholarId")
+        if s2_id:
+            try:
+                scholar = semantic_scholar(s2_id)
+                scholar["url"] = config.get("semanticScholarUrl", "https://www.semanticscholar.org/author/" + s2_id)
+            except Exception as error:  # noqa: BLE001
+                print("::warning::Semantic Scholar fetch failed: %s" % error)
+
+    if scholar is None:
+        scholar = previous.get("citations") or {}
     if not isinstance(scholar.get("citations"), int):
-        print("::error::no Scholar snapshot available")
+        print("::error::no citation snapshot available")
         return 1
-    scholar["url"] = SCHOLAR_PROFILE.format(sid=scholar_id)
     stats["citations"] = scholar
 
     token = os.environ.get("GITHUB_TOKEN", "")

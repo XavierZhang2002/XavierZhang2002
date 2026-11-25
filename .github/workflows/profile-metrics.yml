@@ -29,13 +29,12 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Check secrets
+      - name: Report secret status
         env:
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
         run: |
           if [ -z "${SERPAPI_KEY}" ]; then
-            echo "::error::SERPAPI_KEY is missing. Add it under Settings -> Secrets and variables -> Actions."
-            exit 1
+            echo "::notice::SERPAPI_KEY is not set; citations fall back to Semantic Scholar."
           fi
 
       - name: Collect and render metrics

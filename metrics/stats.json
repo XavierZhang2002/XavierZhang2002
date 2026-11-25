@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-20T02:36:10Z",
+  "updatedAt": "2026-11-25T12:19:39Z",
   "sources": {},
   "citations": {
-    "citations": 65,
+    "citations": 63,
     "hIndex": 2,
-    "i10Index": 1,
-    "url": "https://scholar.google.com/citations?user=5G8W6OcAAAAJ"
+    "paperCount": 6,
+    "source": "semantic-scholar",
+    "url": "https://www.semanticscholar.org/author/Zhenliang-Zhang/2372124652"
   },
   "repositories": [
     {
@@ -17,7 +18,7 @@
     {
       "repo": "XavierZhang2002/ICR_Probe",
       "url": "https://github.com/XavierZhang2002/ICR_Probe",
-      "stars": 25
+      "stars": 26
     },
     {
       "repo": "XavierZhang2002/BID",
@@ -30,5 +31,5 @@
       "stars": 9
     }
   ],
-  "stars": 59
+  "stars": 60
 }
