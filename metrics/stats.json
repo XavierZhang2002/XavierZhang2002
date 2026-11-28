@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-27T23:15:07Z",
+  "updatedAt": "2026-11-28T11:25:53Z",
   "sources": {},
   "citations": {
     "citations": 68,
@@ -18,7 +18,7 @@
     {
       "repo": "XavierZhang2002/ICR_Probe",
       "url": "https://github.com/XavierZhang2002/ICR_Probe",
-      "stars": 29
+      "stars": 31
     },
     {
       "repo": "XavierZhang2002/BID",
@@ -31,5 +31,5 @@
       "stars": 9
     }
   ],
-  "stars": 62
+  "stars": 64
 }
